@@ -1,0 +1,20 @@
+.trimText {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+  -webkit-line-clamp: 1;
+}
+.trimText.clamp5 {
+  -webkit-line-clamp: 5;
+}
+.trimText.clamp4 {
+  -webkit-line-clamp: 4;
+}
+.trimText.clamp2 {
+  -webkit-line-clamp: 2;
+}
+.trimText.clamp3 {
+  -webkit-line-clamp: 3;
+}

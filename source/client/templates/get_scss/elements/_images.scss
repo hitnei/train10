@@ -1,0 +1,75 @@
+img {
+  border: 0;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  vertical-align: middle;
+}
+.image-cover {
+  position: relative;
+  width: 100%;
+  height: 0;
+  a {
+      display: block;
+      height: 100%;
+      width: 100%;
+  }
+  .img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100% !important;
+      height: 100% !important;
+      transform: translate(-50%, -50%);
+      object-fit: cover;
+      object-position: center;
+  }
+  &.image--contain {
+      .img {
+          object-fit: contain;
+          object-position: contain;
+      }
+  }
+  &.image--border {
+      border: solid 1px #ebebeb;
+      border-radius: 4px;
+      .img {
+          max-width: calc(100% - 6px) !important;
+          max-height: calc(100% - 6px) !important;
+          border-radius: 4px;
+      }
+  }
+  &.image-cover--1x1 {
+      padding-bottom: 100%;
+  }
+  &.image-cover--cycle {
+      padding-bottom: 100%;
+      border-radius: 50%;
+  }
+  &.image-cover--16x9 {
+      padding-bottom: 56.25%;
+  }    
+  &.image-cover--19x4 {
+      padding-bottom: 66%;
+  }
+  &.height-275 {
+      padding-bottom: 0;
+      height: 275px;
+  }
+}
+.card--video {
+  .image-cover {
+      a {
+          &::after {
+              content: "";
+              width: 100%;
+              height: 100%;
+              position: absolute;
+              top: 0;
+              left: 0;
+              background: url('../images/icon/ic-v04.png') center center no-repeat;
+              background-size: 40px;
+          }
+      }
+  }
+}

@@ -1,0 +1,36 @@
+body {
+    overflow-x: hidden;
+    a:hover {
+        opacity: 0.8;
+        text-decoration: none;
+    }
+
+    hr {
+        margin: 0 auto;
+    }
+
+    @include bp('sp') {
+        overflow-x: hidden;
+        min-width: 300px;
+
+        hr {
+            width: 100% !important;
+        }
+    }
+}
+
+.sp {
+    display: none !important;
+    @include bp('sp') {
+        display: block !important;
+    }
+}
+
+.pc {
+    @include bp('sp') {
+        display: none !important;
+    }
+}
+:focus {
+    outline:none !important;
+}

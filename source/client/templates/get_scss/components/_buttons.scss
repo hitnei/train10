@@ -1,0 +1,10 @@
+.btn-gradient {
+  border: 1px solid #000E8E;
+  i {
+    margin-left: 5px;
+  }
+  &:hover {
+    background: linear-gradient(74.06deg, #00095C 0%, rgba(0, 14, 142, 0.84) 100%);
+    color: #fff;
+  }
+}

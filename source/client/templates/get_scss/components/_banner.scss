@@ -1,0 +1,62 @@
+.banner-product {
+  padding-top: 140px;
+  padding-bottom: 178px;
+  background: url('../images/img-product-01.png') center no-repeat;
+  background-size: cover;
+  .title-lg {
+    font-family: 'Ropa Sans', sans-serif !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-size: 70px;
+    line-height: 75px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 66px;
+  }
+  .card {
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    text-align: center;
+    height: 100%;
+    max-width: 220px;
+    margin: 0 auto;
+    &-body {
+      background-color: transparent;
+      padding: 26px 12px;
+    }
+    &-title {
+      text-transform: uppercase;
+      font-size: 15px;
+      line-height: 18px;
+    }
+    &-text {
+      font-size: 12px;
+      line-height: 14px;
+    }
+  }
+  .block-01 {
+    margin-top: 177px;
+    .item {
+      height: 276px;
+      @include flexCenter();
+      padding: 15px;
+      border: 1px solid #fff;
+      background: rgba(13, 14, 13, 0.4);
+      h3 {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 35px;
+        text-align: center;
+
+        color: #FFFFFF;
+      }
+      &:hover,&.active{
+        background: rgba(0, 14, 142, 0.8);
+      }
+    }
+  }
+}
