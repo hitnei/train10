@@ -1,8 +1,18 @@
 html {
-    @include bp(1170px) {
-        font-size: 1rem;
+    font-size: 10px;
+}
+
+body {
+    min-width: 1400px;
+}
+
+@media screen and (max-width: $br_medium) {
+    html {
+        font-size: calc(5px + 5 * ((100vw - 375px) / (750 - 375)));
     }
-    //@include fs-vw(16, $base_line_height, 1170);
+    body {
+        min-width: unset;
+    }
 }
 
 * {

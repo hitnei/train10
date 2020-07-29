@@ -1,0 +1,103 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3.6rem;
+    height: 8.2rem;
+    &__logo {
+        width: 10.2rem;
+        height: 4.5rem;
+        img {
+            width: 100%;
+        }
+    }
+    &__group {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__nav {
+        &-pc {
+            display: flex;
+            align-items: center;
+            margin-right: 6rem;
+            list-style: none;
+            li {
+                a {
+                    font-size: 1.2rem;
+                }
+            }
+            li+li {
+                margin-left: 3rem;
+            }
+            .menu {
+                width: 6rem;
+                height: 3.55rem;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    @media screen and (max-width: $br-medium) {
+        padding: 0 2rem 0 1rem;
+        height: 10rem;
+        &__logo {
+            margin-right: 2rem;
+            width: unset;
+            height: unset;
+            img {
+                width: 12.24rem;
+                height: 5.368rem;
+            }
+        }
+        &__group {
+            // width: 78rem;
+        }
+        &__nav {
+            position: relative;
+            &-sp {
+                width: 20.8rem;
+                margin-right: 0;
+                .nav {
+                    display: none;
+                    position: absolute;
+                    border: .1rem solid $color_gray_dark;
+                    padding: 2rem;
+                    width: 40%;
+                    right: .0rem;
+                    margin-top: 1.6rem;
+                }
+                .active {
+                    display: block;
+                }
+                li {
+                    padding: 1rem;
+                    text-align: right;
+                    a {
+                        font-size: 1.6rem;
+                    }
+                }
+                li+li {
+                    margin-left: 0;
+                    border-top: .1rem solid $color_gray_dark;
+                }
+                .menu {
+                    cursor: pointer;
+                    text-align: center;
+                    width: 6rem;
+                    height: unset;
+                    margin-left: auto;
+                    img {
+                        width: 6rem;
+                        margin-bottom: 1.2rem;
+                    }
+                    p {
+                        font-size: 1.6rem;
+                        line-height: 1.6rem;
+                    }
+                }
+            }
+        }
+    }
+}
